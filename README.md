@@ -19,6 +19,7 @@ Git是一个 “分布式版本管理工具”，简单的理解版本管理工�
 4. 如果喜欢这个项目，欢迎 Star、提交 Pr、[反馈问题](https://github.com/521xueweihan/git-tips/issues)😊
 
 ## 目录
+* [将本地代码文件夹作为新分支添加到远程仓库](#将本地代码文件夹作为新分支添加到远程仓库)
 * [展示帮助信息](#展示帮助信息)
 * [回到远程仓库的状态](#回到远程仓库的状态)
 * [重设第一个commit](#重设第一个-commit)
@@ -99,6 +100,21 @@ Git是一个 “分布式版本管理工具”，简单的理解版本管理工�
 * [一图详解](#一图详解)
 * [优雅的提交Commit信息](#优雅的提交Commit信息)
 * [联系我](#联系我)
+
+## 将本地代码文件夹作为新分支添加到远程仓库
+
+想要将本地代码文件夹作为新分支添加到远程仓库
+```sh
+在代码文件夹右键GitBash Here
+git init
+git add .
+git Commit -m “说明”
+git branch Testbranch
+git checkout Testbranch
+git remote add gt https://github.com/V1nChy/git-tips.git
+git remote -v
+git push --set-upstream gt Testbranch
+```
 
 ## 展示帮助信息
 ```sh
